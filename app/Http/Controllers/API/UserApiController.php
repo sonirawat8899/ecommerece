@@ -25,7 +25,8 @@ class UserApiController extends Controller
                     'status'=>422,
                     'message'=>$validator->messages()
                 ]);
-            } else { 
+            } 
+            else { 
                 $user = new User;
                 $user->name = $request->name;
                 $user->email = $request->email;
